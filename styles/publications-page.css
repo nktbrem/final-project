@@ -5,6 +5,10 @@
     border-radius: 12px 12px 0px 0px;
 }
 
+.publications__heading {
+    display: none;
+}
+
 /* Switcher */
 
 .switch__wrapper {
@@ -71,6 +75,10 @@
     .publications {
         padding-top: 20px;
         padding-bottom: 40px;
+    }
+
+    .switch__wrapper {
+        margin-bottom: 20px;
     }
 
     .publications__more-btn {

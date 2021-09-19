@@ -155,13 +155,6 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
-
-    /* .publications__shade {
-        height: 130px;
-        background-color: var(--clr-background);
-        background-image: none;
-    } */
-
 }
 
 @media screen and (max-width: 375px) {

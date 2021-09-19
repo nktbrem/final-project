@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <nav class="header__menu">
-                        <a class="logo logo-mobile" href="#">
+                        <a class="logo logo-mobile" href="../index.html">
                             <picture class="logo__img">
                                 <source media="(max-width: 640px)" srcset="../images/contact/contact-logo-mobile.svg">
                                 <source media="(min-width: 641px)" srcset="../images/contact/contact-logo.svg">
@@ -133,23 +133,23 @@
                 <form class="contact__contact-form">
                     <h2 class="heading contact__heading">Ми хотіли б Вам допомогти</h2>
 
-                    <label for="name" class="visually-hidden"></label>
-                    <input class="contact__input" id="name" type="text" name="name" placeholder="Iм’я" required>
+                    <label for="name" class="visually-hidden">Iм’я</label>
+                    <input class="contact__input" id="name" type="text" name="name" placeholder="Iм’я" pattern="[А-Яа-я]{1,32}" required>
 
-                    <label for="message" class="visually-hidden"></label>
+                    <label for="message" class="visually-hidden">Повідомлення</label>
                     <textarea class="contact__input contact__message" id="message" name="message"
-                        placeholder="Повідомлення" required></textarea>
+                        placeholder="Повідомлення"></textarea>
 
                     <h3 class="contact__subheading">Як вам відповісти?</h3>
 
-                    <label for="phone" class="visually-hidden"></label>
+                    <label for="phone" class="visually-hidden">Номер телефона</label>
                     <input class="contact__input" id="phone" type="tel" name="phone"
-                        placeholder="Номер телефона (+38 ХХХ ХХХ ХХ ХХ)" pattern="^\+38 \d{3} \d{3} \d{2} \d{2}$">
+                        placeholder="Номер телефона (012 345 67 89)" pattern="0+[0-9]{9}" maxlength="10">
 
-                    <label for="email" class="visually-hidden"></label>
+                    <label for="email" class="visually-hidden">email</label>
                     <input class="contact__input" type="email" id="email"
                         pattern="[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+"
-                        placeholder="Чи email (example@mail.com)">
+                        placeholder="Чи email (example@example.com)">
 
                     <div class="send-btn__wrapper">
                         <button class="send-btn" type="submit">Надіслати запит</button>
