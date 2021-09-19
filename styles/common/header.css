@@ -1,0 +1,266 @@
+.header__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info {
+    padding: 8px 0;
+    color: var(--clr-gray);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lang-switcher__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-switcher__item {
+    display: inline-block;
+    width: 29px;
+    height: 24px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.lang-switcher__item:hover {
+    background-color: var(--clr-background-alt);
+}
+
+.lang-switcher__item--active {
+    color: var(--clr-white);
+    background-color: var(--clr-accent);
+}
+
+.lang-switcher__item--active:hover {
+    background-color: var(--clr-accent);
+}
+
+.lang-switcher__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.address {
+    line-height: 19px;
+}
+
+.header__address {
+    margin-left: 16px;
+}
+
+.contact-number {
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+.header__contact-number {
+    margin-left: 20px;
+}
+
+.header__facebook-link {
+    display: flex;
+    align-items: center;
+    fill: var(--clr-gray);
+    margin-left: 24px;
+}
+
+.header__facebook-link:hover {
+    fill: var(--clr-active-hover);
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.header__menu {
+    color: var(--clr-active-regular);
+}
+
+.header__menu-list {
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__menu-item + .header__menu-item {
+    margin-left: 15px;
+}
+
+.header__menu-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header__menu-link:hover {
+    color: var(--clr-accent);
+}
+
+.header__menu-link--active {
+    color: var(--clr-accent);
+    border-bottom: 2px solid var(--clr-accent);
+}
+
+/* Mobile menu styles */
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--clr-white);
+    z-index: 1000;
+}
+
+.mobile-menu__btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.mobile-menu__header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu__close-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.mobile-menu__list {
+    background-color: var(--clr-background);
+}
+
+.mobile-menu__item {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--clr-active-regular);
+    border-bottom: 1px solid var(--clr-white);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mobile-menu__item:hover {
+    color: var(--clr-accent);
+}
+
+.mobile-menu__item--active {
+    color: var(--clr-accent);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .logo-desktop {
+        display: none;
+    }
+
+    .header__inner {
+        display: block;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-mobile {
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 868px) {
+
+    .header__info {
+        justify-content: center;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .header__inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .header__info {
+        justify-content: space-between;
+    }
+
+    .lang-switcher__link {
+        color: var(--clr-gray);
+    }
+
+    .header__address {
+        display: none;
+    }
+
+    .header__contact-number {
+        color: var(--clr-gray);
+    }
+
+    .header__facebook-link {
+        display: none;
+    }
+
+    .dot-before-white::before {
+        content: none;
+    }
+
+    .dot-before-separator::before {
+        content: none;
+    }
+
+    .header__menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__menu-list {
+        display: none;
+    }
+
+    .mobile-menu__btn {
+        display: block;
+    }
+}

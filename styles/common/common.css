@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../../fonts/TTNorms-Bold.eot');
+    src: local('TT Norms Bold'), local('TTNorms-Bold'),
+        url('../../fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TTNorms-Bold.woff') format('woff'),
+        url('../../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../../fonts/TTNorms-Regular.eot');
+    src: local('TT Norms Regular'), local('TTNorms-Regular'),
+        url('../../fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TTNorms-Regular.woff') format('woff'),
+        url('../../fonts/TTNorms-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../../fonts/TTNorms-Medium.eot');
+    src: local('TT Norms Medium'), local('TTNorms-Medium'),
+        url('../../fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TTNorms-Medium.woff') format('woff'),
+        url('../../fonts/TTNorms-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-main: #323264;
+    --clr-alt: #46466E;
+    --clr-soft: #686887;
+    --clr-gray: #B3B3BA;
+    --clr-active-regular: #24A3FF;
+    --clr-active-hover: #0085FF;
+    --clr-active: #006CCF;
+
+    --clr-background: #F5F5FA;
+    --clr-background-alt: #EDEDF7;
+   
+    --clr-accent: #F0145A;
+    --clr-accent-alt: #EF8080;
+
+    --clr-shadow-dark: #CACADB;
+    --clr-shadow-light: #E7E7F2;
+    --clr-separator: #E6E6F0;
+
+    --clr-blue: #323264;
+    --clr-blue-soft: #9f9ab3;
+    --clr-purple: #643E72;
+    --clr-purple-alt: #7A425E;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TT Norms', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1360px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-wide {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.dot-before-gray::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--clr-gray);
+    position: absolute;
+    left: -13px;
+    top: calc(50% - 2px);
+    pointer-events: none;
+}
+
+.dot-before-white::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    position: absolute;
+    left: -13px;
+    top: calc(50% - 2px);
+    pointer-events: none;
+}
+
+.dot-before-separator::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--clr-separator);
+    position: absolute;
+    left: -13px;
+    top: calc(50% - 2px);
+    pointer-events: none;
+}
+
+.transition {
+    transition: all 0.2s linear;
+}
+
+.hover-accent:hover {
+    fill: var(--clr-accent);
+    color: var(--clr-accent);
+}
+
+.heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    background-image: linear-gradient(121.42deg, #F0145A 30.65%, #693264 107.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
